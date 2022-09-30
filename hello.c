@@ -19,6 +19,7 @@ int main()
     printf("%c", s[2]);
     printf("%c", s[3]);
     printf("%c\n", s[4]);
+    printf("%s\n", s);
 
     char *ss = "Hello";
     printf("%s\n", ss);
