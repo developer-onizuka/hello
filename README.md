@@ -22,7 +22,7 @@ But how should you write "Hello World"? Do you create the following stupid code 
 ```
 
 # 2. Array
-Instead, you may use an array. But still not sophisticated somewhere, right?. 
+Instead, you may use an array (= string) composed of char. But still not sophisticated somewhere, right?. 
 ```
     char s[] = {'H','e','l','l','o'};
     printf("%c", s[0]);
@@ -53,7 +53,7 @@ Please note that "Hello" itsef is already array of char. This is a reason of you
     printf("%s\n", *(sssss+1));            /* sssss+1 has the address for 'W' and reads until null. */ 
 ```
 
-Instead, you may use pointer for array so that you can add "World" as 2nd element.
+Instead, you may use pointer for array so that you can add "World" as 2nd element. It's same above because access to array uses indirection reference via pointer.
 ```
     char *ssss[] = {"Hello", "World"};
     printf("%s ", *ssss);                  /* ssss behaves like a double pointer. */
