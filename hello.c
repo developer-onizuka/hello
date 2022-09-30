@@ -51,7 +51,7 @@ int main()
 
     /* If you want to do Hello World, then you may 2D array so that you can add "World" as 2nd element.*/
     /* Please note that "Hello" itsef is already array of char. This is a reason of you should use 2D array. */
-    /* [6] means the length of "World" which is larger than "Hello". */
+    /* [6] means the length of "Hello" and "World" including null. */
     char sssss[][6] = {"Hello", "World"};
     printf("%s ", *sssss);                 /* sssss has the address for 'H' and reads until null. */ 
     printf("%s\n", *(sssss+1));            /* sssss+1 has the address for 'W' and reads until null. */ 
