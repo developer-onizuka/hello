@@ -7,8 +7,7 @@ Should understand the difference between char and string. You can not compile th
 ```
 
 Why? Because char is a type that stores a character and cannot handle a string.<br>
-But how should you write "Hello World" ?<br>
-Do you create the following stupid code for the string with five chars ?
+But how should you write "Hello World"? Do you create the following stupid code for the string with five chars?
 ```
     char s0 = 'H';
     printf("%c", s0);
