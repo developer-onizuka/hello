@@ -19,16 +19,16 @@ int main()
     printf("%c", s[2]);
     printf("%c", s[3]);
     printf("%c\n", s[4]);
-    printf("%s\n", s);
+    printf("%s\n", s);                     /* s has the address for 'H' and reads until null.*/
 
     char *ss = "Hello";
-    printf("%s\n", ss);
+    printf("%s\n", ss);                    /* ss has the address for 'H' and reads until null. */
 
     char sss[] = {"Hello"};
-    printf("%s\n", sss);
-    printf("%s\n", &sss[0]);
+    printf("%s\n", sss);                   /* sss has the address for 'H' and reads until null. */
+    printf("%s\n", &sss[0]);               /* sss[0] has the value of 'Hello'. */
 
     char *ssss[] = {"Hello","World","!"};
-    printf("%s\n", *ssss);
-    printf("%s\n", ssss[0]);
+    printf("%s\n", *ssss);                 /* ssss behaves like a double pointer. */
+    printf("%s\n", ssss[0]);               /* ssss[0] has the address for 'H' and reads until null. */
 }
