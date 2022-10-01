@@ -22,7 +22,7 @@ But how should you write "Hello World"? Do you create the following stupid code 
 ```
 
 # 2. Array
-Instead, you may use an array (= string) composed of char. But still not sophisticated somewhere, right?. 
+Instead, you may use an array (= string) composed of char. But still not sophisticated somewhere, right? 
 ```
     char s[] = {'H','e','l','l','o'};
     printf("%c", s[0]);
