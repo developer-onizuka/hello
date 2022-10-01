@@ -33,28 +33,28 @@ Instead, you may use an array (= string) composed of char. But still not sophist
 ```
 
 # 3. Pointer
-It is better if you use the pointer below: 
+It is better if you use the pointer below:
+You may think it's suddenly for you to use pointer for a string.
 ```
     char *ss = "Hello";
     printf("%s\n", ss);                    /* ss has the address for 'H' and reads until null. */
 ```
-It is same as the above because access to array uses indirection reference via pointer. 
+But if you can understand below, it is not so difficult to understand. It is same as the above because access to array uses indirection reference via pointer. 
 ```
     char sss[] = "Hello";
     printf("%s\n", sss);                   /* sss has the address for 'H' and reads until null. */
 ```
 
-If you want to do Hello World, then you may 2D array so that you can add "World" as 2nd element.<br>
-Please note that "Hello" itsef is already array of char. This is a reason of you should use 2D array.
-[6] means the length of "Hello" and "World" including null.
+If you want to do "Hello World" in addition to above, then you may 2D array so that you can add "World" as 2nd element. Please note that "Hello" itsef is already array of char. This is a reason of you should use 2D array. [6] means the length of "Hello" and "World" including null.
 ```
     char sssss[][6] = {"Hello", "World"};
     printf("%s ", *sssss);                 /* sssss has the address for 'H' and reads until null. */ 
     printf("%s\n", *(sssss+1));            /* sssss+1 has the address for 'W' and reads until null. */ 
 ```
 
-Instead, you may use pointer for array so that you can add "World" as 2nd element. It's same above because access to array uses indirection reference via pointer.<br>
-You have to specify the maximum length of elements while using 2D array. But you don't need to be aware of it if you use the pointer as like below:
+Instead, you may use pointer for "array of array" so that you can add "World" as 2nd element. As I said before, "Hello" itself is a array. But "Hello" itself belongs to the array which includes "World". 
+The array uses indirection reference via pointer. So, Array of array is "Pointer to pointer" which is usually called as duble pointer.<br>
+You have to specify the maximum length of elements in case of 2D array. But you don't need to be aware of it if you use the pointer as like below:
 ```
     char *ssss[] = {"Hello", "World"};
     printf("%s ", *ssss);                  /* ssss behaves like a double pointer. */
