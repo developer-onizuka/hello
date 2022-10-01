@@ -52,8 +52,9 @@ If you want to do "Hello World" in addition to above, then you may 2D array so t
     printf("%s\n", *(sssss+1));            /* sssss+1 has the address for 'W' and reads until null. */ 
 ```
 
-Instead, you may use pointer for "array of array" so that you can add "World" as 2nd element. As I said before, "Hello" itself is a array. But "Hello" itself belongs to the array which includes "World". 
-The array uses indirection reference via pointer. So, Array of array is "Pointer to pointer" which is usually called as duble pointer.<br>
+Instead, you may use pointer for "array of array" so that you can add "World" as 2nd element.<br>
+As I said before, "Hello" is an array. But "Hello" itself belongs to the array which includes "World".
+So, Array of array is **"Pointer to pointer" which is usually called as duble pointer** because the array uses indirection reference via pointer.<br>
 You have to specify the maximum length of elements in case of 2D array. But you don't need to be aware of it if you use the pointer as like below:
 ```
     char *ssss[] = {"Hello", "World"};
