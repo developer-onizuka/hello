@@ -41,7 +41,7 @@ int main()
     printf("%s\n", ss+4);                  /* ss has the address for 'o' and reads until null. */
 
     /* It is same as the above because access to array uses indirection reference via pointer. */
-    char sss[] = {"Hello"};
+    char sss[] = "Hello";
     printf("%s\n", sss);                   /* sss has the address for 'H' and reads until null. */
     printf("%s\n", sss+1);                 /* sss has the address for 'e' and reads until null. */
     printf("%s\n", sss+2);                 /* sss has the address for 'l' and reads until null. */

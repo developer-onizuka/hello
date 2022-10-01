@@ -40,7 +40,7 @@ It is better if you use the pointer below:
 ```
 It is same as the above because access to array uses indirection reference via pointer. 
 ```
-    char sss[] = {"Hello"};
+    char sss[] = "Hello";
     printf("%s\n", sss);                   /* sss has the address for 'H' and reads until null. */
 ```
 
@@ -53,7 +53,8 @@ Please note that "Hello" itsef is already array of char. This is a reason of you
     printf("%s\n", *(sssss+1));            /* sssss+1 has the address for 'W' and reads until null. */ 
 ```
 
-Instead, you may use pointer for array so that you can add "World" as 2nd element. It's same above because access to array uses indirection reference via pointer.
+Instead, you may use pointer for array so that you can add "World" as 2nd element. It's same above because access to array uses indirection reference via pointer.<br>
+You have to specify the maximum length of elements while using 2D array. But you don't need to be aware of it if you use the pointer as like below:
 ```
     char *ssss[] = {"Hello", "World"};
     printf("%s ", *ssss);                  /* ssss behaves like a double pointer. */
