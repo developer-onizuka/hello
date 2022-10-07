@@ -62,4 +62,8 @@ int main()
     printf("%s\n", *(ssss+1));             /* ssss behaves like a double pointer. */
     printf("%s ", ssss[0]);                /* ssss[0] has the address for 'H' and reads until null. */
     printf("%s\n", ssss[1]);               /* ssss[1] has the address for 'W' and reads until null. */
+
+    char **t = (char*[]){"Hello", "World"};    /* Compound Literal instead of 'char **t = {"Hello", "World"};' */
+    printf("%s ", *t);
+    printf("%s\n", *(t+1));
 }
